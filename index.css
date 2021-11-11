@@ -8,6 +8,8 @@
 body {
     display: grid;
     grid-template-columns: 250px 1fr;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .menu {
@@ -42,45 +44,9 @@ main {
     height: 100vh;
 }
 
-input::placeholder {
-    color: #006466;
-    font-weight: 600;
-}
+/*------ MENU --------*/
 
-.search-bar {
-    display: inline-flex;
-    margin-left: 5rem;
-    margin-top: 2rem;
-}
-
-input {
-    background-color: #312244;
-    color: #069E2D;
-    height: 2rem;
-    width: 50vw;
-    border: none;
-    cursor: text;
-    border-radius: 5px;
-    background-image: url('/music-notes2.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-}
-
-input:hover {
-    outline: 1px solid #AA7BC3;
-}
-
-input:focus {
-    outline: 1px solid #AA7BC3;
-}
-
-input:first-child {
-    padding-left: 2rem;
-}
-
-/* Menu Icons */
-
-.home, .browse, .radio, .recently-played, .favorite, .artist, .album {
+.home, .browse, .radio, .recently-played, .favorite, .artists, .albums {
     display: flex;
     align-items: center;
     margin-left: 0.7rem;
@@ -115,18 +81,117 @@ span {
     opacity: 0.6;
 }
 
-#add-playlist:hover {
-    opacity: 1;
+/*-----TOP BAR -----*/
+
+input::placeholder {
+    color: #006466;
+    font-weight: 600;
 }
 
-/* ANiMATiONS */
+header {
+    display: inline-flex;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+input {
+    background-color: #312244;
+    color: #069E2D;
+    height: 2rem;
+    width: 50vw;
+    border: none;
+    cursor: text;
+    border-radius: 5px;
+    background-image: url('images/music-notes2.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+input:first-child {
+    padding-left: 2rem;
+}
+
+.user-info {
+    margin-left: 2rem;
+}
+
+#notification {
+    margin-left: 1rem;
+}
+
+#user {
+    margin-left: 10vw;
+}
+
+/*----- COVER -----*/
+
+.album-cover {
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 10vh;
+    margin-left: 13vw;
+    border-radius: 30px;
+    background-color: #3E1F47;
+    box-shadow: 1px 1px 70px 1px orange;
+}
+
+#album, #enter-the-wutang, #artist, #method-man {
+    color: #069E2D;
+    display: grid;
+}
+
+#enter-the-wutang, #method-man {
+    font-weight: 800;
+}
+
+#cover-image {
+    width: 100%;
+    height: 36%;
+    opacity: 0.5;
+}
+
+.album, .artist {
+    background-color: #1f0f40;
+    height: 40vh;
+}
+
+#cover-image {
+    height: 40vh;
+}
+
+/*----- RADiO PLAYER -----*/
+
+.radio-buttons {
+    box-shadow: 5px 0px 70px 5px #069E2D;
+    margin-top: 1rem;
+    background-color: #312244;
+    display: flex;
+    justify-content: space-around;
+    /*outline: 1px solid greenyellow;*/
+}
+
+/*----- ANiMATiONS -----*/
 
 h1:hover {
     color: #069E2D;
     cursor: pointer;
 }
 
-/* SVG-s */
+#add-playlist:hover {
+    opacity: 1;
+}
+
+input:hover {
+    outline: 1px solid #AA7BC3;
+}
+
+input:focus {
+    outline: 1px solid #AA7BC3;
+}
+
+/*----- SVG-s -----*/
 
 .svg-icon {
     width: 1.5rem;
