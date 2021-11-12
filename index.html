@@ -7,12 +7,30 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="index.css">
+    
 </head>
-<audio autoplay>
-    <source src="Wu Tang Clan - C.R.E.A.M..mp3" type="audio/ogg">
-    <source src="Wu Tang Clan - C.R.E.A.M..mp3" type="audio/mpeg">
-</audio>
 <body>
+    <audio id="wutang" autoplay loop>
+        <source src="WUTANG - CREAM.mp3" type="audio/ogg">
+        <source src="WUTANG - CREAM.mp3" type="audio/mpeg">
+    </audio>
+    <div id='bars'>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+        <div class='bar'></div>
+      </div>
+    <!--<script>
+        window.onload = function() {
+        document.getElementById("wutang").play();
+     }    
+    </script>-->
     <section class="menu">
         <div class="hamburger-menu">
             <div>
@@ -73,7 +91,7 @@
                 <img id="settings" src="/images/settings.png" alt="">
                 <img id="notification" src="/images/notification2.png" alt="">
                 <img id="user" src="/images/user-profile.png" alt="">
-             </div>
+            </div>    
         </header>
         <section class="album-wrapper">
             <a href="#"><img id="previous-button" src="/images/previousbutton.png" alt=""></a>
