@@ -7,10 +7,18 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="index.css">
-
 </head>
+<audio autoplay>
+    <source src="Wu Tang Clan - C.R.E.A.M..mp3" type="audio/ogg">
+    <source src="Wu Tang Clan - C.R.E.A.M..mp3" type="audio/mpeg">
+</audio>
 <body>
     <section class="menu">
+        <div class="hamburger-menu">
+            <div>
+                <img src="/images/hamburgermenu.png" alt="">
+            </div>
+        </div>
         <div class="logo">
             <div class="notes">
                 <img src="/images/musicnotes3.png" alt="">
@@ -87,12 +95,13 @@
         </section>
         <section class="radio-player">
             <div class="radio-buttons">
-                <img src="/images/shufflebutton.png" alt="">
-                <img src="/images/playbutton.png" alt="">
-                <img src="/images/pausebutton.png" alt="">
-                <img src="/images/audiobutton.png" alt="">
-                <img src="/images/stopbutton.png" alt="">
-                <img src="/images/repeatbutton.png" alt="">
+                <img id="shufflebutton" src="/images/shufflebutton.png" alt="">
+                <img id="playbutton" src="/images/playbutton.png" alt="">
+                <img id="pausebutton" src="/images/pausebutton.png" alt="">
+                <img id="audiobutton" src="/images/audiobutton.png" alt="">
+                <img id="stopbutton" src="/images/stopbutton.png" alt="">
+                <img id="repeatbutton" src="/images/repeatbutton.png" alt="">
+                <img id="sharebutton" src="/images/sharebutton.png" alt="">
             </div>            
         </section>
         <section class="trending">
@@ -164,9 +173,25 @@
                         <span id="track-artist">Method Man</span>
                     </div>
                 </div>
-            </div>  
+            </div>    
         </section>
-         
-     </main>  
+          
+        <footer>
+             <div class="download-app">
+                <img src="/images/google-play.png" alt="">
+                <img src="/images/app-store.png" alt="">    
+            </div>
+            <div class="copyright">
+                <span id="copyright">Copyright © 2021 Empower Inc. All rights reserved.</span>
+            </div>
+            <div class="share">  
+                <img src="/images/soundcloud.png" alt="">
+                <img src="/images/facebook.png" alt="">
+                <img src="/images/instagram.png" alt="">
+                <img src="/images/twitter.png" alt="">
+                <img src="/images/tiktok.png" alt="">
+            </div>
+        </footer>  
+    </main>      
 </body>
 </html>
